@@ -1,3 +1,5 @@
+This is a fork for printing hpmor on a 170mm x 240mm book, at buchdruck.de
+
 # Harry Potter and the Methods Of Rationality
 
 https://github.com/rjl20/hpmor  
