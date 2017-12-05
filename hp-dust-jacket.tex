@@ -7,16 +7,16 @@
 \newlength{\hppaperwidth} % no. of pages ÷ 2 × width per sheet
 \setlength{\hppaperwidth}{\bookpaper * \value{bookpagecount} / \real{2.0}}
 \newlength{\hpspinewidth} % paper thickness + 5mm
-\setlength{\hpspinewidth}{\hppaperwidth + 5mm}
+\setlength{\hpspinewidth}{18.65mm}
 \makeatletter
 \setbox\z@=\hbox{\XeTeXpdffile"\bookfile"\relax}
-\newlength{\hpcoverwidth} % paper width + 8mm
-\setlength{\hpcoverwidth}{\the\wd\z@ + 8mm}
+\newlength{\hpcoverwidth} % paper width + 3mm
+\setlength{\hpcoverwidth}{168mm}
 \newlength{\hpcoverheight} % coverheight: paper height
-\setlength{\hpcoverheight}{\the\ht\z@}
+\setlength{\hpcoverheight}{236mm}
 \makeatother
 % flapwidth: 60mm+3mm each side
-\documentclass[12pt,coverwidth=\the\hpcoverwidth,coverheight=\the\hpcoverheight,spinewidth=\the\hpspinewidth,marklength=0mm,bleedwidth=5mm,flapwidth=63mm]{bookcover}
+\documentclass[12pt,coverwidth=\the\hpcoverwidth,coverheight=\the\hpcoverheight,spinewidth=\the\hpspinewidth,marklength=0mm,bleedwidth=5mm,flapwidth=0mm]{bookcover}
 
 \input{hp-header}
 
@@ -50,21 +50,21 @@ Petunia married a biochemist, and Harry grew up reading science and science fict
 }}
 
 % Text on the front flap
-\setbookcover{fgfirst}{front flap}{
-\centering
-\vspace{20mm}
-\parbox{40mm}{\color{white}\raggedright\small
-  HPMOR comes from the world of fan-fiction. With J.~K.~Rowling’s approval, it tells the story of an alternate Harry, an auto-didact rationalist who brings all his powers to bear on the strange new vistas of the world of magic.
-
-  \bigskip The books introduce the reader to the ways of thinking Yudkowsky lays out in his blog, \url{lesswrong.com}.}}
-
-% Text on the back flap
-\setbookcover{fgfirst}{back flap}{
-\centering
-\vspace{20mm}
-\parbox{40mm}{\color{white}\small\raggedright
-  % PUT YOUR BACK DUST-FLAP TEXT HERE!
-}}
+%\setbookcover{fgfirst}{front flap}{
+%\centering
+%\vspace{20mm}
+%\parbox{40mm}{\color{white}\raggedright\small
+%  HPMOR comes from the world of fan-fiction. With J.~K.~Rowling’s approval, it tells the story of an alternate Harry, an auto-didact rationalist who brings all his powers to bear on the strange new vistas of the world of magic.
+%
+%  \bigskip The books introduce the reader to the ways of thinking Yudkowsky lays out in his blog, \url{lesswrong.com}.}}
+%
+%% Text on the back flap
+%\setbookcover{fgfirst}{back flap}{
+%\centering
+%\vspace{20mm}
+%\parbox{40mm}{\color{white}\small\raggedright
+%  % PUT YOUR BACK DUST-FLAP TEXT HERE!
+%}}
 
 \makebookcover
 }

@@ -8,8 +8,9 @@
 \DeclareOption{nocover}{\coverfalse}
 \ProcessOptions % process now as some are used immediately
 
-\documentclass[12pt,extrafontsizes,twoside,openright,final,smallroyalvopaper]{memoir}
-
+\documentclass[12pt,extrafontsizes,twoside,openright,final]{memoir}
+\setstocksize{246mm}{176mm}
+\settrimmedsize{240mm}{170mm}{*}
 \input{hp-header}
 
 
@@ -20,8 +21,9 @@
 % FIXME: Improve the layout: margins not perhaps as wide as the default, but
 % wider than currently. (The type block is currently the same as for the previous, larger paper.)
 %
-\settypeblocksize{\topskip + 34\baselineskip}{352pt}{*}
-\setlrmargins{*}{*}{\hplrmargins}
+\settypeblocksize{\topskip + 35\baselineskip}{362pt}{*}
+%\setlrmargins{*}{*}{\hplrmargins}
+\setlrmargins{*}{*}{1.67}
 \setulmargins{*}{*}{1}
 \setheadfoot{\topskip +  \baselineskip}{2\baselineskip}
 \checkandfixthelayout[fixed]
